@@ -1,146 +1,171 @@
-\documentclass[a4paper]{article}
-    \usepackage{fullpage}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{textcomp}
-    \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
-    \textheight=10in
-    \pagestyle{empty}
-    \raggedright
-    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+\documentclass[fontsize=11pt]{article}
+    \usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage[svgnames]{xcolor}  % Colours by their 'svgnames'
+\usepackage[margin=0.75in]{geometry}
+  \textheight=700px
+\usepackage{url}
+\usepackage{lmodern} % Allow arbitrary font sizes
+\usepackage{textcomp}
 
-    %\renewcommand{\encodingdefault}{cg}
-%\renewcommand{\rmdefault}{lgrcmr}
+%% Define a new 'modern' style for the url package that will use a smaller font.
+\makeatletter
+\def\url@modernstyle{
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{}}}
+\makeatother
+\urlstyle{modern} %% And use the newly defined style.
 
-\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
 
-% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\familydefault}{\sfdefault}
 
-\newcommand{\area} [2] {
-    \vspace*{-9pt}
-    \begin{verse}
-        \textbf{#1}   #2
-    \end{verse}
-}
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
 
-\newcommand{\lineunder} {
-    \vspace*{-8pt} \\
-    \hspace*{-18pt} \hrulefill \\
-}
+\sectionfont{                 % Change font of \section command
+  \usefont{OT1}{phv}{b}{n}%   % bch-b-n: CharterBT-Bold font
+  \sectionrule{0pt}{0pt}{-5pt}{3pt}}
 
-\newcommand{\header} [1] {
-    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
-    \vspace*{-6pt} \lineunder
-}
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}      % Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}   % Vertical space macro
 
-\newcommand{\employer} [3] {
-    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
-}
+\newcommand{\MyName}[1]{ % Name
+    \Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+    \par \normalsize \normalfont}
 
-\newcommand{\contact} [3] {
-    \vspace*{-10pt}
-    \begin{center}
-        {\Huge \scshape {#1}}\\
-        #2 \\ #3
-    \end{center}
-    \vspace*{-8pt}
-}
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+    \large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+    \par \normalsize \normalfont}
 
-\newenvironment{achievements}{
-    \begin{list}
-        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
-    \end{list}
-}
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
 
-\newcommand{\schoolwithcourses} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-    \vspace*{5pt}
-}
+\newcommand{\PersonalEntry}[2]{
+    \noindent\hangindent=2em\hangafter=0 % Indentation
+    \parbox{\spacebox}{                  % Box to align text
+    \textit{#1}}                      % Entry name (birth, address, etc.)
+    \hspace{1.5em} #2 \par}              % Entry value
 
-\newcommand{\school} [4] {
-    \textbf{#1} #2 $\bullet$ #3\\
-    #4 \\
-}
-% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\SkillsEntry}[2]{                % Same as \PersonalEntry
+    \noindent\hangindent=2em\hangafter=0 % Indentation
+    \parbox{\spacebox}{                  % Box to align text
+    \textit{#1}}                    % Entry name (birth, address, etc.)
+    \hspace{1.5em} #2 \par}              % Entry value
 
+\newcommand{\AwardsEntry}[2]{                % Same as \PersonalEntry
+    \noindent\hangindent=2em\hangafter=0 % Indentation
+    \parbox{\spacebox}{                  % Box to align text
+    \textit{#1}}                    % Entry name (birth, address, etc.)
+    \hspace{1.5em} #2 \par}              % Entry value
+
+\newcommand{\EducationEntry}[4]{
+    \noindent \textbf{#1} \hfill      % Study
+    \colorbox{Black}{
+      \parbox{8.5em}{
+      \hfill\color{White}#2}} \par  % Duration
+    \noindent \textit{#3} \par        % School
+    \noindent\hangindent=2em\hangafter=0 \small #4 % Description
+    \normalsize \par}
+
+\newcommand{\WorkEntry}[4]{       % Same as \EducationEntry
+    \noindent \textbf{#1} \hfill      % Jobname
+    \colorbox{Black}{%
+      \parbox{9em}{%
+      \hfill\color{White}#2}} \par   % Duration
+        \noindent \textit{#3} \par        % Company
+    \noindent\hangindent=2em\hangafter=0 \small #4 % Description
+    \normalsize \par}
+
+\newcommand{\ProjectEntry}[4]{         % Similar to \EducationEntry
+    \noindent \textbf{#1} \noindent \textit{#3} \hfill {#2} \par
+    \noindent \small #4 % Description
+    \normalsize \par}
+
+\newcommand{\AwardEntry}[4]{         % Similar to \EducationEntry
+    \noindent \textbf{#1} \noindent \textit{#3} \hfill {#2} \par
+    \noindent \small #4 % Description
+    \normalsize \par}
     \begin{document}
-\vspace*{-40pt}
-
     
+\MyName{Aryasomayajula Ram Bharadwaj}
+\bigskip
+{\small \hfill ram.bharadwaj.arya@gmail.com | 9108832338 | Benguluru,India | github.com/rokosbasilisk}
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}{}
+\EducationEntry
+{B.tech Electronics and Communications}
+{2015 - 2019}
+{GMR Institute of Technology, Rajam,Andhra pradesh}
+%%% Work experience
+%%% ------------------------------------------------------------
 
-%==== Profile ====%
-\vspace*{-10pt}
-\begin{center}
-	{\Huge \scshape {Aryasomayajula Ram Bharadwaj}}\\
-	Benguluru $\cdot$ ram.bharadwaj.arya@gmail.com $\cdot$ 9108832338 $\cdot$ http://arb.sh/\\
-\end{center}
+\NewPart{Work Experience}{}
 
-%==== Education ====%
-\header{Education}
-\textbf{GMR Institute of Technology}\hfill Rajam,Andhra pradesh\\
-B.tech Electronics and Communications  \hfill 2015 - 2019\\
-\vspace{2mm}
+\WorkEntry
+{Developer at Innovation \& Development Labs}
+{2019 - Present}
+{Musigma Business Solutions, Benguluru}
+{\begin{itemize} \itemsep -1pt
+	\item Designed and built an automated intra-day trading system, and also acted as a team-lead
+	\item Migrated legacy code for trade-signal generation from R to scala
+	\item Re-wrote majority of the microservices, eliminating thousands of lines of dead-code, thus reducing years of technical debt
+	\item Implemented a PSO based multi-objective optimizer for black-box optimizing hyperparameters for various technical-indicators.
+	\item Built dashboards for monitoring and visualizing various metrics to understand cluster-utilization
+	\item Designed and Implemented framework for switching between deployment strategies (blue-green,canary,graph-based) for ML models deployed on Kubernetes and Docker-swarm environments
+	\item Wrote whitepaper for internal use on various cloud-based vendors in MLOps space
+	\end{itemize}}
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills}{}
+\SkillsEntry{Languages}{Scala,Python, Java,R}
+\SkillsEntry{ML}{Pytorch,JAX}
+\SkillsEntry{DevOps}{Kubernetes, Docker-swarm}
+\SkillsEntry{Misc}{Akka, Spring-boot}
+%%% Projects
+%%% ------------------------------------------------------------
+\NewPart{Projects}{}
 
-%==== Experience ====%
-\header{Work Expirience}
-\vspace{1mm}
+\ProjectEntry{Tplusone.Org (Team Lead/Backend Developer/DevOps)}{Tplusone.Org}
+{}
+{An in-house web based application for advanced financial market analysis, executing \& visualizing algorithmic trading strategies in real-time.}
+\sepspace
+\ProjectEntry{MuOps-AI (Backend Developer)}{}
+{}
+{An end to end web-platform for operationalizing machine learning models. Provides a jupyter-notebook like one-stop solution for deploying an monitoring ML models}
+\sepspace
+\ProjectEntry{Implicit Behavior Cloning for Minecraft tasks (Ongoing)}{https://github.com/rokosbasilisk/implicit\_bc\_minerl}
+{}
+{Evaluating energy based modelling approaches for behavior cloning in minecraft environments}
+\sepspace
+\ProjectEntry{Opensource-contributions}{}
+{}
+{Implemented a framework for evaluating code generated by language models in a sandboxed environment, and evaluation of language-model\textquotesingle{}s performance in math-word problems}
+%%% Awards
+%%% ------------------------------------------------------------
+\NewPart{Awards}{}
 
-\textbf{Musigma Business Solutions} \hfill Benguluru\\
-\textit{Developer at InD lab} \hfill 2019 - Present\\
-\vspace{-1mm}
-\begin{itemize} \itemsep 1pt
-	\item Worked as a developer and maintainer for an in-house MlOps tool
-	\item Designed and Implemented framework for switching between deployment strategies for ML models on Kubernetes and Docker-swarm
-	\item Implemented pipelines for automatic re-training and deployment of models based on Model performance
-	\item Implemented trigger-based functionality for alerts based on model\textquotesingle{}s live performance
-	\item Built Dashboards for monitoring various cluster related metrics
-	\item Migrated a legacy signal-generation and trading system from R to scala
-\end{itemize}
-
-\header{Skills}
-\begin{tabular}{ l l }
-	Programming languages: & Python, Java, Scala           \\
-	DevOps:                & Kubernetes, Docker-Swarm,CICD \\
-	ML frameworks:         & Pytorch                       \\
-	Other frameworks:      & Akka,Spring-boot              \\
-\end{tabular}
-\vspace{2mm}
-
-\header{Projects}
-{\textbf{MuOps-AI}}\\
-An end to end platform for operationalizing machine learning models. I am majorly involved in design, implementation and maintenance of the backend and monitoring stack.\\
-\vspace*{2mm}
-{\textbf{Pairtrading.dev}}\hfill Pairtrading.dev\\
-An in house web based application for executing pairtrading strategies in real-time. I am majorly involved in migration of existing code-base from R to Scala and debugging misc issues.\\
-\vspace*{2mm}
-{\textbf{Opensource-contributions}}\\
-Implemented a framework for evaluating code generated by language models in a sandboxed environment, and evaluation of language-model\textquotesingle{}s performance in math-word problems\\
-\vspace*{2mm}
-
-\header{Awards}
-\textbf{SPOT Award} \hfill Musigma Business Solutions\\
-For the outstanding work in implementation of new features and significant contribution towards debugging legacy issues \hfill July 2020\\
-\vspace*{2mm}
-\textbf{SPOT Award} \hfill Musigma Business Solutions\\
-For design and implementation of framework deployment-strategies \hfill Nov. 2020\\
-\vspace*{2mm}
-\textbf{SPOT Award} \hfill Musigma Business Solutions\\
-For delivering an entire new set of features in extremely constrained timelines. \hfill Jan. 2021\\
-\vspace*{2mm}
-\textbf{SPOT Award} \hfill Musigma Business Solutions\\
-For quickly developing both the model and the platform required for an urgent Client Demo \hfill Jul 2021\\
-\vspace*{2mm}
-\textbf{SPOT Award} \hfill Musigma Business Solutions\\
-For quick understanding of the existing codebase for Pairtrading application and providing support \hfill Feb 2022\\
-\vspace*{2mm}
-\textbf{Bronze-position} \hfill Redis\\
-Built a natural-language semantic code-search for build-on-redis hackathon, organized by redis-conf \hfill Feb 2021\\
-\vspace*{2mm}
-\textbf{Honorable Mention} \hfill Alignment Research Center\\
-For my proposal ”Eliciting Latent Knowledge through Cooperative Dialogue” in ELK contest. \hfill Mar 2022\\
-\vspace*{2mm}
-
+\AwardEntry{Honorable Mention}{Alignment Research Center}
+{Mar 2022}
+{ELK (Eliciting Latent Knowledge) is an open theoretical research-problem in AI safety/AI alignment. ARC (Alignment Research Center) hosted a competition for promisable proposals which could potentially solve this problem.}
+\sepspace
+\AwardEntry{Bronze-position}{Redis}
+{Feb 2021}
+{Built a natural-language semantic code-search for build-on-redis hackathon, organized by redis-conf}
+\sepspace
+\AwardEntry{Impact Award}{Musigma Business Solutions}
+{October 2022}
+{Self-engaging with any challenge, and comes up with alternate choices, commanding devops and integration skills}
+\sepspace
+\AwardEntry{SPOT Award}{Musigma Business Solutions}
+{}
+{Recognized as \textquotedbl{}Star performer of the Team\textquotedbl{} 6 times}
 \ 
 \end{document}
