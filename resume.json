@@ -1,58 +1,69 @@
 {
   "selectedTemplate": 9,
   "headings": {
-    "work": "Work Experience",
+    "work": "WORK EXPERIENCE",
+    "education": "EDUCATION",
     "skills": "Skills",
     "awards": "Awards",
-    "education": "Education",
     "projects": "Projects"
   },
   "basics": {
     "name": "Aryasomayajula Ram Bharadwaj",
     "email": "ram.bharadwaj.arya@gmail.com",
-    "website": "github.com/rokosbasilisk",
     "phone": "9108832338",
+    "website": " github.com/rokosbasilisk",
     "location": {
       "address": "Benguluru,India"
     }
   },
   "education": [
     {
-      "institution": "GMR Institute of Technology",
-      "area": "Electronics and Communications",
-      "studyType": "B.tech",
+      "location": " Rajam,Andhra pradesh",
+      "area": "Electronics and Communications ",
+      "studyType": "B.tech ",
       "startDate": "2015",
       "endDate": "2019",
-      "gpa": "",
-      "location": "Rajam,Andhra pradesh"
+      "institution": "GMR Institute of Technology"
     }
   ],
   "work": [
     {
       "company": "Musigma Business Solutions",
-      "position": "Developer at Innovation & Development Labs",
+      "location": " Benguluru",
+      "position": "Developer (Apprentice Leader) at Innovation & Development Labs 2019 - Present",
       "website": "",
       "startDate": "2019",
       "endDate": "Present",
       "highlights": [
+        "Designed and implemented for a LLM based workflow orchestrator for data-science tasks",
+        "Trained and deployed S4 model (structured state spaces for sequence modeling) for stock-moment prediction and trade-signal generation",
+        "Performed evaluation of various hyperparameter optimization algorithms for timeseries models",
         "Designed and built an automated intra-day trading system, and also acted as a team-lead",
         "Migrated legacy code for trade-signal generation from R to Scala",
-        "Implemented a multi-objective PSO based optimizer for  hyperparameters of various technical-indicators.",
-        "Built dashboards for monitoring and visualizing various cluster-utilization metrics",
-        "Designed  framework for deployment strategies (blue-green,canary) for ML models deployed on Kubernetes",
+        "Implemented a multi-objective PSO based optimizer for hyperparameters of various technical-indicators.",
+        "Performed comparative analysis of  various hyper-parameter optimization algorithms and implemented a framwork for switching between bayesian,PSO and evolutionary optimization algorithms for timeseries models",
+        "Designed framework for deployment strategies (blue-green,canary) for ML models deployed on Kubernetes",
         "Recognized as \"Star performer of the team\" 6 times"
+      ]
+    },
+    {
+      "highlights": [
+        "MATS is a scientific and educational seminar and an independent research program that underwent AI alignment research training under John Wentworth in the Agent Foundations stream."
       ],
-      "location": "Benguluru"
+      "company": "Stanford Existential Risk Initiative",
+      "position": "ML Alignment Theory Research Trainee May-2023 - July-2023",
+      "location": "Remote",
+      "startDate": "May-2023",
+      "endDate": " July-2023"
     }
   ],
   "skills": [
     {
+      "name": "Languages",
       "level": "",
       "keywords": [
-        "Scala,Python",
-        "Java,R"
-      ],
-      "name": " Languages"
+        "Scala,Python, Java,R"
+      ]
     },
     {
       "keywords": [
@@ -62,15 +73,13 @@
     },
     {
       "keywords": [
-        "Kubernetes",
-        "Docker-swarm"
+        "Kubernetes, Docker-swarm"
       ],
       "name": "DevOps"
     },
     {
       "keywords": [
-        "Akka",
-        "Spring-boot"
+        "Akka, Spring-boot"
       ],
       "name": "Misc"
     }
@@ -78,26 +87,25 @@
   "projects": [
     {
       "keywords": [
-        null
+        "flask, openai-api"
       ],
-      "name": "Tplusone.Org (Team Lead/Backend Developer/DevOps)",
+      "name": "Interactive Data Science (Ml engineer/ backend developer)",
+      "description": "(loosely inspired by promptchainer), A DAG based LLM workflow orchestrator for data-science tasks.  "
+    },
+    {
+      "keywords": [
+        ""
+      ],
+      "url": "Tplusone.Org",
       "description": "An in-house web based application for advanced financial market analysis, executing & visualizing algorithmic trading strategies in real-time.",
-      "url": "Tplusone.Org"
+      "name": "Tplusone.Org (Team Lead/Backend Developer/DevOps)"
     },
     {
       "keywords": [
         ""
       ],
-      "name": "MuOps-AI (Backend Developer)",
-      "description": "An end to end web-platform for operationalizing machine learning models. Provides a jupyter-notebook like one-stop solution for deploying and monitoring ML models"
-    },
-    {
-      "keywords": [
-        ""
-      ],
-      "name": "Implicit Behavior Cloning for Minecraft tasks (Ongoing)",
-      "url": "https://github.com/rokosbasilisk/implicit_bc_minerl",
-      "description": "Evaluating energy based modelling approaches for behavior cloning in minecraft environment"
+      "description": "An end to end web-platform for operationalizing machine learning models. Provides a jupyter-notebook like one-stop solution for deploying and monitoring ML models",
+      "name": "MuOps-AI (Backend Developer)"
     },
     {
       "keywords": [
@@ -105,31 +113,32 @@
       ],
       "name": "Opensource-contributions",
       "description": "Implemented a framework for evaluating code generated by language models in a sandboxed environment, and evaluation of language-model's performance in math-word problems"
-    },
-    {
-      "keywords": [
-        ""
-      ]
     }
   ],
   "awards": [
     {
+      "title": "AI Alignment Awards ",
+      "date": "July 2023 ",
+      "awarder": "www.alignmentawards.com",
+      "summary": "My research-proposal was one of the  winning entries for  the \"goal misgeneralization\" track"
+    },
+    {
       "title": "Honorable Mention",
       "date": "Mar 2022",
       "awarder": "Alignment Research Center",
-      "summary": "ELK (Eliciting Latent Knowledge) is an open theoretical research-problem in AI safety/AI alignment. ARC (Alignment Research Center) hosted a competition for promisable proposals which could potentially solve this problem. "
+      "summary": "ELK (Eliciting Latent Knowledge) is an open theoretical research-problem in AI safety/AI alignment. ARC (Alignment Research Center) hosted a competition for promisable proposals which could potentially solve this problem."
     },
     {
-      "title": "Impact Award",
-      "date": "October 2022",
+      "title": "Impact Award ",
+      "summary": "Self-engaging with any challenge, and comes up with alternate choices, commanding devops and integration skills",
       "awarder": "Musigma Business Solutions",
-      "summary": "Self-engaging with any challenge, and comes up with alternate choices, commanding devops and integration skills"
+      "date": "October 2022"
     },
     {
       "title": "Bronze-position",
       "date": "Feb 2021",
-      "awarder": "Build-on-Redis Hackathon",
-      "summary": "Built a natural-language semantic code-search for build-on-redis hackathon, organized by redis-conf"
+      "summary": "Built a natural-language semantic code-search for build-on-redis hackathon, organized by redis-conf",
+      "awarder": "Build-on-Redis Hackathon"
     }
   ],
   "sections": [
