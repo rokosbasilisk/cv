@@ -36,7 +36,7 @@
       "endDate": "Present",
       "highlights": [
         "Designed and implemented for a LLM based workflow orchestrator for data-science tasks",
-        "Trained and deployed S4 model (structured state spaces for sequence modeling) for stock-moment prediction and trade-signal generation",
+        "Researched and benchmarked on  S4 model (structured state spaces for sequence modeling) for stock-moment prediction and trade-signal generation for an in-house intraday-trading playform",
         "Performed evaluation of various hyperparameter optimization algorithms for timeseries models",
         "Designed and built an automated intra-day trading system, and also acted as a team-lead",
         "Migrated legacy code for trade-signal generation from R to Scala",
