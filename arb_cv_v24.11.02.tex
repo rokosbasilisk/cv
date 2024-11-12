@@ -46,22 +46,20 @@
     \hspace{1.5em} #2 \par}
 
 \newcommand{\SkillsEntry}[2]{
-    \noindent\hangindent=2em\hangafter=0
-    \parbox{\spacebox}{\textit{#1}}
-    \hspace{1.5em} #2 \par}
+    \noindent\textbf{\textit{#1}} \hspace{1.5em} #2 \par}
+
+
 
 \newcommand{\EducationEntry}[4]{
-    \noindent \textbf{#1} \hfill
-    \colorbox{Black}{\parbox{8.5em}{\hfill\color{White}#2}} \par
+    \noindent \textbf{#1} \hfill {#2} \par
     \noindent \textit{#3} \par
-    \noindent\hangindent=2em\hangafter=0 \small #4
+    \noindent \small #4
     \normalsize \par}
 
 \newcommand{\WorkEntry}[4]{
-    \noindent \textbf{#1} \hfill
-    \colorbox{Black}{\parbox{9em}{\hfill\color{White}#2}} \par
+    \noindent \textbf{#1} \hfill {#2} \par
     \noindent \textit{#3} \par
-    \noindent\hangindent=2em\hangafter=0 \small #4
+    \noindent \small #4
     \normalsize \par}
 
 \newcommand{\ProjectEntry}[4]{
@@ -103,7 +101,7 @@
 
 \WorkEntry
 {Senior Developer at Innovation \& Development Labs}
-{2019 - Present}
+{June 2019 - Nov 2024}
 {Musigma Business Solutions, Bengaluru}
 {%
 \begin{itemize}
@@ -175,11 +173,9 @@
 
 % SKILLS Section
 \NewPart{SKILLS}
-\SkillsEntry{Languages}{Scala, Python, Java, R}
-\SkillsEntry{Deep Learning Frameworks}{PyTorch (Expert level proficiency), JAX}
-\SkillsEntry{DevOps}{Kubernetes, Docker-swarm}
-\SkillsEntry{Frameworks}{Akka, Spring-boot}
-\SkillsEntry{AI/ML}{LLM Fine-tuning, Neural Network Architecture Implementation}
+\SkillsEntry{Programming Languages:}{Scala, Python, Java, R}
+\SkillsEntry{Machine Learning Frameworks:}{PyTorch, JAX}
+\SkillsEntry{DevOps Tools:}{Kubernetes, Docker Swarm}
 
 % AWARDS & RECOGNITIONS Section
 \NewPart{AWARDS \& RECOGNITIONS}
