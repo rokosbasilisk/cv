@@ -81,20 +81,24 @@
 
 \begin{document}
 
+% Name and Contact Information
 \MyName{Aryasomayajula Ram Bharadwaj}
 \bigskip
 
-{\small \hfill ram.bharadwaj.arya@gmail.com | 9108832338 | Bengaluru, India | github.com/rokosbasilisk}
+{\small \hfill \href{mailto:ram.bharadwaj.arya@gmail.com}{ram.bharadwaj.arya@gmail.com} | +91-9108832338 | Bengaluru, India | \href{https://github.com/rokosbasilisk}{github.com/rokosbasilisk}}
 
+% ABOUT Section
 \NewPart{ABOUT}
 \AboutEntry{Versatile ML Engineer and Backend Developer with expertise in deep learning and strong DevOps knowledge. Skilled in multiple programming languages and refactoring legacy codebases, passionate about AI research.}
 
+% EDUCATION Section
 \NewPart{EDUCATION}
 \EducationEntry
 {B.Tech Electronics and Communications}
 {2015 - 2019}
 {GMR Institute of Technology, Andhra Pradesh}
 
+% PROFESSIONAL EXPERIENCE Section
 \NewPart{PROFESSIONAL EXPERIENCE}
 
 \WorkEntry
@@ -108,28 +112,42 @@
 \item Received multiple recognitions including Impact Awards and Star Performer of the Team.
 \end{itemize}}
 
-
+% KEY PROJECTS Section (Professional Projects)
 \NewPart{KEY PROJECTS}
 
-\ProjectEntry{LLM Agent Platform}{Dec 2023 - Present}{Team Lead, ML Engineer, Backend Developer}
+\ProjectEntry{LLM Agent Platform}{Dec 2023 - Nov 2024}{Team Lead, ML Engineer, Backend Developer}
 {%
 \begin{itemize}
 \item Designed and implemented a semi-autonomous data analysis platform powered by LLM Agents.
-\item Developed training strategies or LLM Agents via automatic prompt optimization and integrated Retrieval-Augmented Generation (RAG) support.
-\item Implemented evaluation for LLM Agent's results using ensemble of locally mosted LLMS.
+\item Developed training strategies for LLM Agents via automatic prompt optimization and integrated Retrieval-Augmented Generation (RAG) support.
+\item Implemented evaluation for LLM Agents' results using an ensemble of locally mosted LLMs.
 \item Maintained a customized fork of Microsoft's Autogen framework.
-\item Successfully deployed for two major clients, assisted client teams in creating usecases.
+\item Successfully deployed for two major clients, assisted client teams in creating use cases.
 \end{itemize}}
 
 \sepspace
-\ProjectEntry{AdvisorMatch}{Nov 2024}{Creator, Developer}
+\ProjectEntry{High Velocity Trading Platform}{2021 - Dec 2023}{Team Lead, Backend Developer, DevOps}
 {%
 \begin{itemize}
-\item Built a PhD advisor-matching tool, AdvisorMatch (advisormatch.in), to help candidates find faculty advisors aligned with their research interests.
-\item Designed a similarity search mechanism that matches the user's research interests with the latest work of over 25,000 global faculty to recommend suitable matches.
-\item Integrated user feedback mechanisms to refine matching accuracy and launched AdvisorMatch as a publicly accessible tool, providing an easy-to-use interface for prospective PhD applicants.
+\item Refactored backend code and migrated deployment from bare-metal to Kubernetes.
+\item Implemented automated hyperparameter search for ARIMA models.
+\item Rewrote legacy trade-signal generation from R to Scala using Akka framework.
+\item Enabled near real-time metric calculation and portfolio visualization.
 \end{itemize}}
+
 \sepspace
+\ProjectEntry{Next-Gen Model Operationalization Platform}{2019 - 2021}{Backend Developer}
+{%
+\begin{itemize}
+\item Developed automatic retraining pipelines for image classification models.
+\item Designed and implemented Java microservices for creating and serving Jupyter notebooks.
+\item Engineered a microservice for deploying ML models in a DAG structure with canary and blue-green deployment strategies.
+\item Created dashboards for monitoring model and resource usage metrics.
+\end{itemize}}
+
+% RESEARCH PAPERS Section
+\NewPart{RESEARCH PAPERS}
+
 \ProjectEntry{\href{https://github.com/rokosbasilisk/filler_tokens}{Understanding Hidden Computations in Transformer Language Models}}{August 2024}{Independent Researcher}
 {%
 \begin{itemize}
@@ -145,62 +163,34 @@
 \item Conducted noise injection experiments on Vision Transformer models, tracked alignment across LLM training stages, showing phases of similarity that indicate convergence toward a shared structure.
 \end{itemize}}
 
-\sepspace
-\ProjectEntry{Synthetic debate data generation}{Feb 2024}{Individual Contributor}
+% PERSONAL PROJECTS Section
+\NewPart{PERSONAL PROJECTS}
+
+\ProjectEntry{AdvisorMatch}{Nov 2024}{Creator, Developer}
 {%
 \begin{itemize}
-\item Implemented a LLM Agent system for generating debates using openai's gpt-4 model.
-\item Finetuned pythia and mistral models on the synthetically generated debates using LoRA and KTO methods
-\item Conducted experiments to understand emergance of deceptive behavior in LLM generated debates 
+\item Built a PhD advisor-matching tool, AdvisorMatch (\href{https://advisormatch.in}{advisormatch.in}), to help candidates find faculty advisors aligned with their research interests.
+\item Designed a similarity search mechanism that matches the user's research interests with the latest work of over 23,000 global faculty to recommend suitable matches.
 \end{itemize}}
 
-\sepspace
-\sepspace
-\ProjectEntry{\href{https://tplusone.org}{High Velocity Trading Platform}}{2021 - Dec 2023}{Team Lead, Backend Developer, DevOps}
-{%
-\begin{itemize}
-\item Refactored backend code and migrated deployment from bare-metal to Kubernetes.
-\item Implemented automated hyperparameter search for ARIMA models.
-\item Rewrote legacy trade-signal generation from R to Scala using Akka framework.
-\item Enabled near real-time metric calculation and portfolio visualization.
-\end{itemize}}
-
-\sepspace
-
-\ProjectEntry{Next-Gen Model Operationalization Platform}{2019 - 2021}{Backend Developer}
-{%
-\begin{itemize}
-\item Developed automatic retraining pipelines for image classification models.
-\item Designed and implemented Java microservices for creating and serving Jupyter notebooks.
-\item Engineered a microservice for deploying ML models in a DAG structure with canary and blue-green deployment strategies.
-\item Created dashboards for monitoring model and resource usage metrics.
-\end{itemize}}
-
-\sepspace
-
-\ProjectEntry{\href{https://github.com/rokosbasilisk/code-eval-harness}{Open Source Contributions}}{Ongoing}{Individual Contributor}
-{%
-\begin{itemize}
-\item Developed a framework for evaluating LLM-generated code in a sandboxed environment.
-\item Extended lm-eval-harness (LLM Evaluation framework) to support benchmarking of mathematical and arithmetic reasoning tasks.
-\end{itemize}}
-
+% SKILLS Section
 \NewPart{SKILLS}
 \SkillsEntry{Languages}{Scala, Python, Java, R}
-\SkillsEntry{Deep learning Frameworks}{PyTorch (Expert level proficiency), JAX}
+\SkillsEntry{Deep Learning Frameworks}{PyTorch (Expert level proficiency), JAX}
 \SkillsEntry{DevOps}{Kubernetes, Docker-swarm}
 \SkillsEntry{Frameworks}{Akka, Spring-boot}
 \SkillsEntry{AI/ML}{LLM Fine-tuning, Neural Network Architecture Implementation}
 
+% AWARDS & RECOGNITIONS Section
 \NewPart{AWARDS \& RECOGNITIONS}
 
 \AwardEntry{AI Alignment Awards}{July 2023}{www.alignmentawards.com}
-{Winning entry for the "goal misgeneralization" track research proposal, 5 out of 118 entries were selected in this research competition}
+{Winning entry for the "goal misgeneralization" track research proposal, selected among 118 entries in this research competition.}
 
 \sepspace
 
 \AwardEntry{Honorable Mention}{Mar 2022}{Alignment Research Center}
-{"Eliciting Latent Knowledge" is a open research problem in AI Safety, My proposal was one of the honoroble mentions in the ELK (Eliciting Latent Knowledge) research competition.}
+{"Eliciting Latent Knowledge" is an open research problem in AI Safety. My proposal was one of the honorable mentions in the ELK (Eliciting Latent Knowledge) research competition.}
 
 \sepspace
 
@@ -215,6 +205,6 @@
 \sepspace
 
 \AwardEntry{Bronze Position}{Feb 2021}{Build-on-Redis Hackathon}
-{Winning entry in Build-on-redis hackathon, implemented a text2code search tool entirely on redis stack using codeBERT model's embeddings for a private coderepo}
+{Winning entry in the Build-on-Redis hackathon. Implemented a text2code search tool entirely on Redis Stack using CodeBERT model's embeddings for a private code repository.}
 
 \end{document}
