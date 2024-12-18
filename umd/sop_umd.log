@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.2)  19 DEC 2024 01:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.2)  19 DEC 2024 01:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -267,21 +267,26 @@ LaTeX Info: Redefining \nameref on input line 11.
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 60.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 60.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 60.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
-Underfull \hbox (badness 1043) in paragraph at lines 59--61
+ []
+
+[3]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 59.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 59.
+
+Underfull \hbox (badness 1043) in paragraph at lines 58--60
 []\OT1/cmr/m/n/12 Aryasomayajula Ram Bharad-waj. (2024). \OT1/cmr/m/it/12 Un-de
 r-stand-ing Hid-den Com-pu-ta-tions in
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 75--77
+Underfull \hbox (badness 2096) in paragraph at lines 74--76
 []\OT1/cmr/m/n/12 Paul Chris-tiano, Ajeya Co-tra, and Mark Xu. (2021). \OT1/cmr
 /m/it/12 Elic-it-ing La-tent Knowl-
  []
@@ -303,7 +308,7 @@ Here is how much of TeX's memory you used:
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on sop_umd.pdf (4 pages, 74893 bytes).
+Output written on sop_umd.pdf (4 pages, 74723 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
