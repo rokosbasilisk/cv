@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.2)  14 DEC 2024 02:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.2)  19 DEC 2024 01:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**sop_utah.tex
-(./sop_utah.tex
+**sop_umd.tex
+(./sop_umd.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -189,8 +189,8 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count272
 \l__pdf_internal_box=\box50
 )
-(./sop_utah.aux)
-\openout1 = `sop_utah.aux'.
+(./sop_umd.aux)
+\openout1 = `sop_umd.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -261,49 +261,49 @@ LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
 
-(./sop_utah.out) (./sop_utah.out)
+(./sop_umd.out) (./sop_umd.out)
 \@outlinefile=\write3
-\openout3 = `sop_utah.out'.
+\openout3 = `sop_umd.out'.
 
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 58.
+(Font)              <12> on input line 60.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 58.
+(Font)              <8> on input line 60.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 58.
+(Font)              <6> on input line 60.
 
-Underfull \hbox (badness 1043) in paragraph at lines 57--59
+Underfull \hbox (badness 1043) in paragraph at lines 59--61
 []\OT1/cmr/m/n/12 Aryasomayajula Ram Bharad-waj. (2024). \OT1/cmr/m/it/12 Un-de
 r-stand-ing Hid-den Com-pu-ta-tions in
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 73--75
+Underfull \hbox (badness 2096) in paragraph at lines 75--77
 []\OT1/cmr/m/n/12 Paul Chris-tiano, Ajeya Co-tra, and Mark Xu. (2021). \OT1/cmr
 /m/it/12 Elic-it-ing La-tent Knowl-
  []
 
-[4] (./sop_utah.aux)
-Package rerunfilecheck Info: File `sop_utah.out' has not changed.
+[4] (./sop_umd.aux)
+Package rerunfilecheck Info: File `sop_umd.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  7841 strings out of 480247
- 124300 string characters out of 5896152
- 417933 words of memory out of 5000000
+ 124283 string characters out of 5896152
+ 417928 words of memory out of 5000000
  25718 multiletter control sequences out of 15000+600000
  473761 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,5n,63p,842b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,5n,63p,972b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/oppenheimer/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm12
 00.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on sop_utah.pdf (4 pages, 74457 bytes).
+Output written on sop_umd.pdf (4 pages, 74893 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
