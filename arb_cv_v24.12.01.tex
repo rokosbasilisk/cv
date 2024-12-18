@@ -1,0 +1,206 @@
+\documentclass[fontsize=11pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage[svgnames]{xcolor}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{hyperref}
+
+\makeatletter
+\def\url@modernstyle{
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{}}}
+\makeatother
+\urlstyle{modern}
+
+\frenchspacing
+\pagestyle{empty}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{sectsty}
+\sectionfont{
+  \usefont{OT1}{phv}{b}{n}
+  \sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}
+\newcommand{\sepspace}{\vspace*{1em}}
+
+\newcommand{\MyName}[1]{
+    \Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+    \par \normalsize \normalfont}
+
+\newcommand{\MySlogan}[1]{
+    \large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
+    \par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+    \noindent\hangindent=2em\hangafter=0
+    \parbox{\spacebox}{\textit{#1}}
+    \hspace{1.5em} #2 \par}
+
+\newcommand{\SkillsEntry}[2]{
+    \noindent\textbf{\textit{#1}} \hspace{1.5em} #2 \par}
+
+
+
+\newcommand{\EducationEntry}[4]{
+    \noindent \textbf{#1} \hfill {#2} \par
+    \noindent \textit{#3} \par
+    \noindent \small #4
+    \normalsize \par}
+
+\newcommand{\WorkEntry}[4]{
+    \noindent \textbf{#1} \hfill {#2} \par
+    \noindent \textit{#3} \par
+    \noindent \small #4
+    \normalsize \par}
+
+\newcommand{\ProjectEntry}[4]{
+    \noindent \textbf{#1} \hfill {#2} \par
+    \noindent \textit{#3} \par
+    \noindent \small #4
+    \normalsize \par}
+
+\newcommand{\AwardEntry}[4]{
+    \noindent \textbf{#1} \hfill {#2} \par
+    \noindent \textit{#3} \par
+    \noindent \small #4
+    \normalsize \par}
+
+\newcommand{\AboutEntry}[1]{
+    \noindent #1 \par}
+
+\begin{document}
+
+% Name and Contact Information
+\MyName{Aryasomayajula Ram Bharadwaj}
+\bigskip
+
+{\small \hfill \href{mailto:ram.bharadwaj.arya@gmail.com}{ram.bharadwaj.arya@gmail.com} | +91-9108832338 | Bengaluru, India | \href{https://github.com/rokosbasilisk}{github.com/rokosbasilisk}}
+
+% ABOUT Section
+\NewPart{ABOUT}
+\AboutEntry{Versatile ML Engineer and Backend Developer with expertise in deep learning and strong DevOps knowledge. Skilled in multiple programming languages and refactoring legacy codebases, passionate about AI research.}
+
+% EDUCATION Section
+\NewPart{EDUCATION}
+\EducationEntry
+{B.Tech Electronics and Communications}
+{2015 - 2019}
+{GMR Institute of Technology, Andhra Pradesh}
+
+% PROFESSIONAL EXPERIENCE Section
+\NewPart{PROFESSIONAL EXPERIENCE}
+\WorkEntry
+{Associate Technical Architect - MLOps}
+{Nov 2024 - Present}
+{Quantiphi Analytics, Bengaluru}
+{%
+\begin{itemize}
+\item Designed and implemented an AI agent system for automated replies for a major telecom company.
+\end{itemize}}
+\WorkEntry
+{Senior Developer at Innovation \& Development Labs}
+{June 2019 - Nov 2024}
+{Musigma Business Solutions, Bengaluru}
+{%
+\begin{itemize}
+\item Led development of multiple high-impact projects in LLM operationalization, automated trading, and MLOps.
+\item Specialized in backend development, DevOps, and ML engineering across various domains.
+\item Received multiple recognitions including Impact Awards and Star Performer of the Team.
+\end{itemize}}
+
+% KEY PROJECTS Section (Professional Projects)
+\NewPart{KEY PROJECTS}
+
+\ProjectEntry{LLM Agent Platform}{Dec 2023 - Nov 2024}{Team Lead, ML Engineer, Backend Developer}
+{%
+\begin{itemize}
+\item Designed and implemented a semi-autonomous data analysis platform powered by LLM Agents.
+\item Developed training strategies for LLM Agents via automatic prompt optimization and integrated Retrieval-Augmented Generation (RAG) support.
+\item Implemented evaluation for LLM Agents' results using an ensemble of locally mosted LLMs.
+\item Maintained a customized fork of Microsoft's Autogen framework.
+\item Successfully deployed for two major clients, assisted client teams in creating use cases.
+\end{itemize}}
+
+\sepspace
+\ProjectEntry{High Velocity Trading Platform}{2021 - Dec 2023}{Team Lead, Backend Developer, DevOps}
+{%
+\begin{itemize}
+\item Refactored backend code and migrated deployment from bare-metal to Kubernetes.
+\item Implemented automated hyperparameter search for ARIMA models.
+\item Rewrote legacy trade-signal generation from R to Scala using Akka framework.
+\item Enabled near real-time metric calculation and portfolio visualization.
+\end{itemize}}
+
+\sepspace
+\ProjectEntry{Next-Gen Model Operationalization Platform}{2019 - 2021}{Backend Developer}
+{%
+\begin{itemize}
+\item Developed automatic retraining pipelines for image classification models.
+\item Designed and implemented Java microservices for creating and serving Jupyter notebooks.
+\item Engineered a microservice for deploying ML models in a DAG structure with canary and blue-green deployment strategies.
+\item Created dashboards for monitoring model and resource usage metrics.
+\end{itemize}}
+
+% RESEARCH PAPERS Section
+\NewPart{RESEARCH PAPERS}
+
+\ProjectEntry{\href{https://arxiv.org/html/2412.04537}{Understanding Hidden Computations in Transformer Language Models}}{August 2024}{Independent Researcher}
+{%
+\begin{itemize}
+\item Conducted research to decode the "hidden" computations in transformer models during Chain of Thought (COT) reasoning.
+\item Investigated methods to enhance the faithfulness and internal mechanics of chain-of-thought reasoning in LLMs.
+\end{itemize}}
+
+
+% PERSONAL PROJECTS Section
+\NewPart{PERSONAL PROJECTS}
+
+\ProjectEntry{AdvisorMatch}{Nov 2024}{Creator, Developer}
+{%
+\begin{itemize}
+\item Built 'AdvisorMatch' a PhD advisor-matching tool, to help candidates find faculty advisors aligned with their research interests.
+\item Designed a similarity search mechanism that matches the user's research interests with the latest work of over 23,000 global faculty to recommend suitable matches.
+\end{itemize}}
+
+% SKILLS Section
+\NewPart{SKILLS}
+\SkillsEntry{Programming Languages:}{Scala, Python, Java, R}
+\SkillsEntry{Machine Learning Frameworks:}{PyTorch, JAX}
+\SkillsEntry{DevOps Tools:}{Kubernetes, Docker Swarm}
+
+% AWARDS & RECOGNITIONS Section
+\NewPart{AWARDS \& RECOGNITIONS}
+
+\AwardEntry{AI Alignment Awards}{July 2023}{www.alignmentawards.com}
+{Winning entry for the "goal misgeneralization" track research proposal, selected among 118 entries in this research competition.}
+
+\sepspace
+
+\AwardEntry{Honorable Mention}{Mar 2022}{Alignment Research Center}
+{"Eliciting Latent Knowledge" is an open research problem in AI Safety. My proposal was one of the honorable mentions in the ELK (Eliciting Latent Knowledge) research competition.}
+
+\sepspace
+
+\AwardEntry{Impact Award}{October 2022, December 2023}{Musigma Business Solutions}
+{Recognized for self-engagement, DevOps skills, and designing the LLM-Agent conversation platform.}
+
+\sepspace
+
+\AwardEntry{Star Performer of the Team}{2019 to 2023}{Musigma Business Solutions}
+{Received the SPOT award six times for exceptional contributions.}
+
+\sepspace
+
+\AwardEntry{Bronze Position}{Feb 2021}{Build-on-Redis Hackathon}
+{Winning entry in the Build-on-Redis hackathon. Implemented a text2code search tool entirely on Redis Stack using CodeBERT model's embeddings for a private code repository.}
+
+\end{document}
