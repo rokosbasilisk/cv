@@ -1,0 +1,155 @@
+\documentclass[fontsize=11pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage[svgnames]{xcolor}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{hyperref}
+
+\makeatletter
+\def\url@modernstyle{
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{}}}
+\makeatother
+\urlstyle{modern}
+
+\frenchspacing
+\pagestyle{empty}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{sectsty}
+\sectionfont{
+  \usefont{OT1}{phv}{b}{n}
+  \sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}
+\newcommand{\sepspace}{\vspace*{1em}}
+
+\newcommand{\MyName}[1]{
+    \Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+    \par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+    \noindent\hangindent=2em\hangafter=0
+    \parbox{\spacebox}{\textit{#1}}
+    \hspace{1.5em} #2 \par}
+
+\newcommand{\EducationEntry}[4]{
+    \noindent \textbf{#1} \hfill {#2} \par
+    \noindent \textit{#3} \par
+    \noindent \small #4
+    \normalsize \par}
+
+\newcommand{\ResearchEntry}[4]{
+    \noindent \textbf{#1} \hfill {#2} \par
+    \noindent \textit{#3} \par
+    \noindent \small #4
+    \normalsize \par}
+
+\newcommand{\ProjectEntry}[4]{
+    \noindent \textbf{#1} \hfill {#2} \par
+    \noindent \textit{#3} \par
+    \noindent \small #4
+    \normalsize \par}
+
+\begin{document}
+
+\MyName{Aryasomayajula Ram Bharadwaj}
+\bigskip
+
+{\small \hfill \href{mailto:ram.bharadwaj.arya@gmail.com}{ram.bharadwaj.arya@gmail.com} | +91-9108832338 | Bengaluru, India | \href{https://github.com/rokosbasilisk}{github.com/rokosbasilisk}}
+
+\NewPart{Research Interests}
+\begin{itemize}
+\item AI Safety: faithfulness of Chain-of-thought reasoning, Goal misgeneralization, Eliciting latent knowledge, Mechanistic Interpretability
+\end{itemize}
+
+\NewPart{Education}
+\EducationEntry
+{B.Tech Electronics and Communications}
+{2015 - 2019}
+{GMR Institute of Technology, Andhra Pradesh}
+{Relevant Coursework: Probability and Statistics, Soft Computing, Digital Signal Processing}
+
+\NewPart{Professional Experience}
+\ResearchEntry
+{Associate Technical Architect - MLOps}
+{Nov 2024 - Present}
+{Quantiphi Analytics, Bengaluru}
+{
+\begin{itemize}
+\item Designed and implemented an AI agent system for automated replies for a major telecom company
+\end{itemize}}
+
+\ResearchEntry
+{Senior Developer at Innovation \& Development Labs}
+{June 2019 - Nov 2024}
+{Musigma Business Solutions, Bengaluru}
+{
+\begin{itemize}
+\item Led development of multiple high-impact projects in LLM operationalization, automated trading, and MLOps
+\item Specialized in backend development, DevOps, and ML engineering across various domains
+\item Received multiple recognitions including Impact Awards and Star Performer of the Team
+\end{itemize}}
+
+\NewPart{Research Experience}
+\ResearchEntry
+{Independent AI Safety Research}
+{2022 - Present}
+{Focus: LLM Interpretability and AI Safety}
+{
+\begin{itemize}
+\item Published research on hidden computations in transformer models (arXiv:2412.04537)
+\item Won AI Alignment Awards 2023 for research on goal misgeneralization
+\item Received honorable mention in ELK Competition 2022 from Alignment Research Center
+\end{itemize}}
+
+\NewPart{Publications}
+\ProjectEntry
+{Understanding Hidden Computations in Transformer Language Models}
+{August 2024}
+{arXiv:2412.04537}
+{
+\begin{itemize}
+\item Investigated methods to enhance faithfulness in chain-of-thought reasoning
+\item Developed novel techniques for interpreting hidden computations in transformers involving filler tokens
+\end{itemize}}
+
+\NewPart{Other Projects}
+\ProjectEntry
+{AdvisorMatch - Research Interest Analysis}
+{2024}
+{Creator \& Lead Developer}
+{
+\begin{itemize}
+\item Built semantic search system analyzing research interests of 23,000+ faculty
+\item Implemented NLP techniques for academic publication analysis
+\item Open-sourced to aid PhD candidates in research advisor matching
+\end{itemize}}
+
+\NewPart{Technical Skills}
+\PersonalEntry{Research Tools}{PyTorch, JAX, TensorFlow, Scikit-learn}
+\PersonalEntry{Programming}{Python, R, Scala}
+\PersonalEntry{Analysis}{Statistical Methods, Deep Learning, NLP}
+
+\NewPart{Awards \& Honors}
+\ProjectEntry
+{AI Alignment Awards}
+{July 2023}
+{www.alignmentawards.com}
+{Winner of "goal misgeneralization" track (selected from 118 entries)}
+
+\ProjectEntry
+{ELK Competition}
+{March 2022}
+{Alignment Research Center}
+{Honorable mention for novel approach to AI safety problem}
+
+\end{document}

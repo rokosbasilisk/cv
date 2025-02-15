@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.2)  17 DEC 2024 19:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.2)  19 DEC 2024 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**lor_suprit.tex
-(./lor_suprit.tex
+**lor_suprit_utah.tex
+(./lor_suprit_utah.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/letter.cls
@@ -87,8 +87,8 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count189
 \l__pdf_internal_box=\box50
 )
-(./lor_suprit.aux)
-\openout1 = `lor_suprit.aux'.
+No file lor_suprit_utah.aux.
+\openout1 = `lor_suprit_utah.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
@@ -104,7 +104,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -164,19 +163,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 25.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lor_suprit.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lor_suprit_utah.aux) ) 
 Here is how much of TeX's memory you used:
- 1052 strings out of 480247
- 18772 string characters out of 5896152
- 311069 words of memory out of 5000000
+ 1050 strings out of 480247
+ 18787 string characters out of 5896152
+ 311093 words of memory out of 5000000
  19035 multiletter control sequences out of 15000+600000
  486469 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,7n,62p,459b,224s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/
-share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/l
-m/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
-Output written on lor_suprit.pdf (1 page, 59674 bytes).
+ 55i,7n,62p,464b,224s stack positions out of 5000i,500n,10000p,200000b,80000s
+{
+/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/pub
+lic/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb>
+Output written on lor_suprit_utah.pdf (1 page, 59774 bytes).
 PDF statistics:
  19 PDF objects out of 1000 (max. 8388607)
  11 compressed objects within 1 object stream
