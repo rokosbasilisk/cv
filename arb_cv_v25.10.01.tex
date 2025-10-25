@@ -1,0 +1,123 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+\pagestyle{empty}
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+\begin{document}
+
+\begin{center}
+\textbf{\Large Aryasomayajula Ram Bharadwaj} \\
+\vspace{4pt}
+Bengaluru, India | \href{mailto:ram.bharadwaj.arya@gmail.com}{ram.bharadwaj.arya@gmail.com} | +91-9108832338 | \href{https://github.com/rokosbasilisk}{github.com/rokosbasilisk}
+\end{center}
+
+\vspace{12pt}
+
+\section{Profile}
+Research-focused AI Engineer working at the intersection of large-scale systems, interpretability, and AI safety. Six years of experience in ML infrastructure, agentic workflow design, and large-model analysis. Published multiple papers on representation scaling, activation steering, and reasoning efficiency. Skilled at bridging deep research with deployable production systems.
+
+\section{Core Competencies}
+\begin{itemize}[leftmargin=*,nosep]
+\item \textbf{Research:} Mechanistic interpretability, scaling laws, activation steering, representation alignment, model awareness
+\item \textbf{Frameworks:} PyTorch, JAX, Transformers, LangGraph, AutoGen
+\item \textbf{Systems:} Docker, Kubernetes, Redis, Kafka, PostgreSQL, Microservices
+\item \textbf{Cloud:} AWS, GCP
+\item \textbf{Languages:} Python, Scala, Java
+\end{itemize}
+
+\section{Research \& Publications}
+\textbf{\href{https://fullwrong.com/2025/07/23/scaling-compression/}{Scaling Laws for LLM-Based Data Compression}} \hfill \textbf{Jul 2025}\\
+\textit{Lead Investigator}
+\begin{itemize}[leftmargin=*,nosep]
+\item Derived universal power-law scaling between model size and compression efficiency across text, image, and speech domains.
+\end{itemize}
+
+\textbf{\href{https://arxiv.org/abs/2506.18831}{Steering Token Usage with PID Control}} \hfill \textbf{Jun 2025}\\
+\textit{Lead Investigator}
+\begin{itemize}[leftmargin=*,nosep]
+\item Proposed a redundancy-aware activation steering method that reduced reasoning token usage by 32\% while improving GSM8K accuracy.
+\item Released open-source implementation \href{https://github.com/rokosbasilisk/STU-PID}{STU-PID}.
+\end{itemize}
+
+\textbf{\href{https://arxiv.org/html/2412.04537}{Understanding Hidden Computations in Transformer Language Models}} \hfill \textbf{Aug 2024}\\
+\textit{Lead Investigator}
+\begin{itemize}[leftmargin=*,nosep]
+\item Analyzed an open problem  underlying interpretability of chain-of-thought reasoning.
+\item Designed probing techniques revealing latent computation patterns in transformer intermediate layers.
+\end{itemize}
+
+\section{Awards \& Recognition}
+\textbf{Winner – AI Alignment Awards} \hfill \textbf{Jul 2023}\\
+Selected among 118 global entries for work on goal misgeneralization and alignment failure modes.
+
+\textbf{Honorable Mention – Eliciting Latent Knowledge (ARC)} \hfill \textbf{Mar 2022}\\
+Recognized for novel approach to eliciting implicit model knowledge.
+
+\textbf{Bronze Medal – Build-on-Redis Hackathon} \hfill \textbf{Feb 2021}\\
+Developed private code search engine using CodeBERT embeddings and Redis Stack.
+
+\textbf{Excellence Awards (8×) – MuSigma Business Solutions} \hfill \textbf{2019–2023}
+
+\section{Professional Experience}
+
+\textbf{Associate Technical Architect – Platform} \hfill \textbf{Nov 2024 – Present}\\
+\textit{Quantiphi Analytics, Bengaluru}
+\begin{itemize}[leftmargin=*,nosep]
+\item Architected AI agent infrastructure for automated issue-severity classification and escalation prediction, integrating RAG and reasoning-evaluation pipelines.
+\item Built conversational sales-intelligence chatbot for a major telecom client; refactored proprietary framework to LangGraph, cutting code size 40\% and latency 3×.
+\item Designed modular data-ingestion layer for scheduled RAG pipelines, boosting retrieval precision 20\%.
+\end{itemize}
+
+\textbf{AI Resident – Lossfunk AI Residency} \hfill \textbf{May 2025}\\
+\textit{Lossfunk Research Residency}
+\begin{itemize}[leftmargin=*,nosep]
+\item One of 10 selected from 100+ applicants for six-week research residency in interpretability.
+\item Developed redundancy-aware steering methods for reducing chain-of-thought length in reasoning models.
+\end{itemize}
+
+\textbf{ML Engineer – Innovation \& Development Labs} \hfill \textbf{Jun 2019 – Nov 2024}\\
+\textit{MuSigma Business Solutions, Bengaluru}
+\begin{itemize}[leftmargin=*,nosep]
+\item Led multi-team initiatives in LLM operationalization, automated trading, and scalable MLOps.
+\item Migrated high-velocity trading systems from bare-metal to Kubernetes; enabled automatic hyperparameter search for ARIMA models.
+\item Re-engineered trade-signal generator from R to Scala (Akka), enabling near-real-time metrics and adaptive portfolio retraining.
+\item Built microservice-based ML deployment framework with blue-green and canary rollout strategies.
+\end{itemize}
+
+\section{Key Projects}
+\textbf{LLM Agent Platform (LangGraph)} \hfill \textbf{2023–2024}\\
+\begin{itemize}[leftmargin=*,nosep]
+\item Designed semi-autonomous data-analysis platform with prompt optimization feature.
+\item Added support for building and orchestrating AI agents in with minimal coding.
+\end{itemize}
+
+\textbf{High-Velocity Trading Platform} \hfill \textbf{2021–2023}\\
+\begin{itemize}[leftmargin=*,nosep]
+\item Implemented asynchronous signal pipelines, model serving, and portfolio visualization dashboards.
+\end{itemize}
+
+\textbf{ML Model Operationalization Framework} \hfill \textbf{2019–2021}\\
+\begin{itemize}[leftmargin=*,nosep]
+\item Developed automatic retraining workflows for CV models and multi-environment deployment pipelines.
+\end{itemize}
+
+\section{Independent Projects}
+\textbf{\href{https://wiserank.io}{Wiserank.io – AI-Powered Research Discovery}} \hfill \textbf{Jun 2025}\\
+\textit{Creator \& Full-Stack Developer}
+\begin{itemize}[leftmargin=*,nosep]
+\item Built research-paper search engine ranking works by originality and citation impact; integrated automatic reference generation and semantic vector search.
+\item Achieved 100+ active research users in first few months.
+\end{itemize}
+
+\section{Education}
+\textbf{Bachelor of Technology – Electronics and Communications Engineering} \hfill \textbf{2015–2019}\\
+GMR Institute of Technology, Andhra Pradesh
+
+\end{document}
+
