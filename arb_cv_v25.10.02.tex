@@ -1,123 +1,157 @@
 \documentclass[11pt]{article}
 \usepackage[margin=0.6in]{geometry}
+\usepackage{fontawesome}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{array}
+
+% Remove page numbers
 \pagestyle{empty}
 
+% Section formatting
 \titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{8pt}{4pt}
 
+% Custom commands
+\newcommand{\itemwithdate}[2]{\item \textbf{#1} \hfill #2}
+
 \begin{document}
 
+% Header
 \begin{center}
 \textbf{\Large Aryasomayajula Ram Bharadwaj} \\
 \vspace{4pt}
-Bengaluru, India | \href{mailto:ram.bharadwaj.arya@gmail.com}{ram.bharadwaj.arya@gmail.com} | +91-9108832338 | \href{https://github.com/rokosbasilisk}{github.com/rokosbasilisk}
+Location: Bengaluru | \href{https://github.com/rokosbasilisk}{GitHub} | \href{mailto:ram.bharadwaj.arya@gmail.com}{ram.bharadwaj.arya@gmail.com} | Mobile: +91-9108832338
 \end{center}
 
 \vspace{12pt}
 
-\section{Profile}
-AI Engineer with six years of experience designing scalable AI systems and agentic workflows that bridge deep learning research and production deployment. Skilled in building LLM evaluation pipelines, developing interpretability experiments, and engineering infrastructure for reliable model reasoning and analysis. Published research on model compression, reasoning efficiency. Known for combining rigorous experimentation with strong systems design to advance trustworthy AI.
-
-\section{Core Competencies}
-\begin{itemize}[leftmargin=*,nosep]
-\item \textbf{Research:} LLM evaluation, interpretability
-\item \textbf{Frameworks:} PyTorch, JAX, Transformers, LangGraph, AutoGen
-\item \textbf{Systems:} Docker, Kubernetes, Redis, Kafka, PostgreSQL, Microservices
-\item \textbf{Cloud:} AWS, GCP
-\item \textbf{Languages:} Python, Scala, Java
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*, nosep]
+\item \textbf{Programming:} Python, Scala, Java, R
+\item \textbf{ML/AI:} PyTorch, JAX, Transformers, LangChain, AutoGen, LangGraph
+\item \textbf{DevOps:} Docker, Kubernetes, CI/CD
+\item \textbf{Cloud Platforms:} AWS, GCP
+\item \textbf{Systems:} Redis, Kafka, Microservices, PostgreSQL, MongoDB
 \end{itemize}
 
-\section{Professional Experience}
+\section{Professional Summary}
+AI Engineer with 6+ years developing production AI systems and leading engineering teams. Independent researcher with published work on model explainability and LLM inference optimization. Experienced architecting scalable solutions for conversational AI and agentic workflows.
 
-\textbf{Associate Technical Architect} \hfill \textbf{Nov 2024 – Present}\\
+\section{Experience}
+
+\textbf{Associate Technical Architect - Platform} \hfill \textbf{Nov 2024 - Present} \\
 \textit{Quantiphi Analytics, Bengaluru}
-\begin{itemize}[leftmargin=*,nosep]
-\item Designed AI agent system for automated issue-severity classification and escalation management.
-\item Architected and implemented a conversational AI chatbot for a telecom client using LangGraph, improving modularity and reducing response latency by 3×.
-\item Revamped the RAG ingestion pipeline to improve retrieval accuracy by 20\% and ensure consistent evaluation performance.
+\begin{itemize}[leftmargin=*, nosep]
+\item Designed AI agent system for automated issue severity classification and escalation management.
+\item Architected and implemented a conversational AI-agent chatbot for answering sales-related queries at a major telecom company, refactoring legacy systems to a leaner modular implementation.
 \end{itemize}
 
-\textbf{AI Resident – Lossfunk AI Residency} \hfill \textbf{May 2025}\\
-\textit{Lossfunk Research Residency}
-\begin{itemize}[leftmargin=*,nosep]
-\item Selected among 100+ applicants for a 6-week research program in interpretability and evaluation.
-\item Developed redundancy-aware steering techniques (\href{https://arxiv.org/abs/2506.18831}{STU-PID}) achieving 32\% token reduction and higher reasoning accuracy on GSM8K.
-
+\textbf{AI Resident - Lossfunk AI Residency} \hfill \textbf{May 2025} \\
+\textit{Lossfunk AI Residency}
+\begin{itemize}[leftmargin=*, nosep]
+\item Selected among 100 applicants for elite 6-week intensive AI residency program with 10 researchers
+\item Developed \href{https://github.com/rokosbasilisk/STU-PID}{STU-PID}, a novel activation steering technique achieving 32\% token reduction and improved reasoning accuracy on GSM8K benchmark
+\item Published research findings: \href{https://arxiv.org/abs/2506.18831}{Steering Token Usage with PID Control}
 \end{itemize}
 
-\textbf{ML Engineer – Innovation \& Development Labs} \hfill \textbf{Jun 2019 – Nov 2024}\\
-\textit{MuSigma Business Solutions, Bengaluru}
-\begin{itemize}[leftmargin=*,nosep]
-\item Led development of high-impact systems in LLM operationalization, automated trading, and scalable MLOps.
-\item Migrated trading infrastructure from bare-metal to Kubernetes with automated hyperparameter search for ARIMA models.
-\item Rebuilt trade-signal generation from R to Scala (Akka), enabling real-time analytics and adaptive portfolio retraining.
-\item Designed ML model deployment microservices with CI/CD, blue-green, and canary rollout strategies.
+\textbf{ML Engineer - Innovation \& Development Labs} \hfill \textbf{June 2019 - Nov 2024} \\
+\textit{Musigma Business Solutions, Bengaluru}
+\begin{itemize}[leftmargin=*, nosep]
+\item Led development of multiple high-impact projects in LLM operationalization, automated trading, and MLOps
+\item Specialized in backend development, DevOps, and ML engineering across various domains
+\item Received multiple recognitions including Impact Awards and Star Performer of the Team
 \end{itemize}
 
-\section{Highlighted Project}
-\textbf{\href{https://wiserank.io}{Wiserank.io – AI-Powered Research Discovery}} \hfill \textbf{Jun 2025 – Present}\\
+\section{Highlighted Projects}
+
+\textbf{\href{https://wiserank.io}{Wiserank.io - AI-Powered Research Discovery}} \hfill \textbf{June 2025} \\
 \textit{Creator \& Full-Stack Developer}
-\begin{itemize}[leftmargin=*,nosep]
-\item Built an AI-powered research discovery engine ranking papers by originality and information density.
-\item Designed full-stack architecture with semantic search, citation generation.
-\item Reached 100+ active research users within initial launch period.
+\begin{itemize}[leftmargin=*, nosep]
+\item Built research paper search engine with relevance and 'creativity' ranking algorithms and implemented automatic citation generation feature for uploaded manuscripts
 \end{itemize}
 
-\newpage
-\section{Key Projects}
-\textbf{Conversational Sales Chatbot using AI Agents} \hfill \textbf{2024 – Present}\\
-\begin{itemize}[leftmargin=*,nosep]
-\item Built agentic chatbot handling telecom sales queries using LangGraph.
-\item Refactored proprietary workflow engine to modular pipelines, cutting code size by 40\%.
+\section{Key Technical Projects}
+
+\textbf{Conversational Sales Chatbot using AI Agents} \hfill \textbf{Nov 2024 - Present} \\
+\textit{Team Lead, ML Engineer, Backend Developer}
+\begin{itemize}[leftmargin=*, nosep]
+\item Designed and implemented an AI agent system for automated replies for a telecom client's sales chatbot
+\item Refactored existing codebase from a proprietary framework to LangGraph and significantly reduced overall codebase size
+\item Revamped and automated the scheduled RAG data ingestion pipeline, improving retrieval accuracy by 20\% and reducing time to first token by 3x
 \end{itemize}
 
-\textbf{LLM Agent Platform} \hfill \textbf{2023–2024}\\
-\begin{itemize}[leftmargin=*,nosep]
-\item Designed semi-autonomous data-analysis platform with automated prompt optimization and evaluation metrics.
-\item Integrated RAG-based reasoning and ensemble evaluation for local LLM deployments.
+\textbf{LLM Agent Platform} \hfill \textbf{Dec 2023 - Nov 2024} \\
+\textit{Team Lead, ML Engineer, Backend Developer}
+\begin{itemize}[leftmargin=*, nosep]
+\item Designed and implemented semi-autonomous data analysis platform using AutoGen framework
+\item Developed automated prompt optimization strategies and integrated RAG support with evaluation framework using ensemble of locally hosted LLMs
 \end{itemize}
 
-\textbf{High-Velocity Trading Platform} \hfill \textbf{2021–2023}\\
-\begin{itemize}[leftmargin=*,nosep]
-\item Migrated backend architecture and integrated near real-time analytics using Akka and Scala.
-\item Added retraining and visualization modules for portfolio metrics and latency diagnostics.
+\textbf{High-Velocity Trading Platform} \hfill \textbf{2021 - Dec 2023} \\
+\textit{Team Lead, Backend Developer, DevOps}
+\begin{itemize}[leftmargin=*, nosep]
+\item Refactored backend code and migrated deployment from bare-metal to Kubernetes with automated hyperparameter search for ARIMA models
+\item Rewrote legacy trade-signal generation from R to Scala using Akka framework, enabled near real-time metric calculation and portfolio visualization
 \end{itemize}
 
-\textbf{ML Model Operationalization Platform} \hfill \textbf{2019–2021}\\
-\begin{itemize}[leftmargin=*,nosep]
-\item Automated retraining workflows for image models with multi-environment deployment via CI/CD.
-\item Developed APIs for model serving and notebook-based microservice integration.
+\textbf{ML Model Operationalization Platform} \hfill \textbf{2019 - 2021} \\
+\textit{Backend Developer}
+\begin{itemize}[leftmargin=*, nosep]
+\item Developed automatic retraining pipelines for image classification models and designed Java microservices for creating and serving Jupyter notebooks
+\item Engineered ML model deployment service with canary and blue-green deployment strategies
 \end{itemize}
 
 \section{Research \& Publications}
-\textbf{\href{https://fullwrong.com/2025/07/23/scaling-compression/}{Scaling Laws for LLM-Based Data Compression}} \hfill \textbf{Jul 2025}\\
-\textit{Lead Investigator} — Discovered scaling laws linking language model's capacity to compression efficiency across modalities.
 
-\textbf{\href{https://arxiv.org/abs/2506.18831}{Steering Token Usage with PID Control}} \hfill \textbf{Jun 2025}\\
-\textit{Lead Investigator} — Introduced redundancy-aware steering method that improved reasoning efficiency and reduced token usage.
+\textbf{\href{https://fullwrong.com/2025/07/23/scaling-compression/}{Scaling Laws for LLM-Based Data Compression}} \hfill \textbf{July 2025} \\
+\textit{Lead Investigator}
+\begin{itemize}[leftmargin=*, nosep]
+\item Investigated scaling laws for data-compression capabilities of LLMs on text, image, and speech modalities.
+\end{itemize}
 
-\textbf{\href{https://arxiv.org/html/2412.04537}{Understanding Hidden Computations in Transformer Language Models}} \hfill \textbf{Aug 2024}\\
-\textit{Lead Investigator} — Explored how transformer internals encode multi-step reasoning in chain-of-thought tasks.
+\textbf{\href{https://arxiv.org/abs/2506.18831}{Steering Token Usage with PID Control}} \hfill \textbf{June 2025} \\
+\textit{Lead Investigator}
+\begin{itemize}[leftmargin=*, nosep]
+\item Novel technique reducing computational overhead in LLMs through activation steering with 32\% token reduction on GSM8K.
+\end{itemize}
 
-\section{Awards \& Recognition}
-\textbf{Winner – AI Alignment Awards} \hfill \textbf{Jul 2023}\\
-Recognized among 118 global entries for work on goal misgeneralization and AI safety evaluation.
+\textbf{\href{https://arxiv.org/html/2412.04537}{Understanding Hidden Computations in Transformer Language Models}} \hfill \textbf{August 2024} \\
+\textit{Lead Investigator}
+\begin{itemize}[leftmargin=*, nosep]
+\item Investigated internal mechanisms of chain-of-thought reasoning and developed interpretability methods for LLM reasoning.
+\end{itemize}
 
-\textbf{Honorable Mention – Eliciting Latent Knowledge (ARC)} \hfill \textbf{Mar 2022}\\
-Acknowledged for novel solutions in latent knowledge elicitation.
+\section{Awards \& Recognitions}
 
-\textbf{Bronze Medal – Build-on-Redis Hackathon} \hfill \textbf{Feb 2021}\\
-Developed private code search using CodeBERT embeddings and Redis Stack.
+\textbf{AI Alignment Awards - Winner} \hfill \textbf{July 2023} \\
+\textit{\href{https://www.lesswrong.com/posts/zFoAAD7dfWdczxoLH/winners-of-ai-alignment-awards-research-contest}{AI Safety Research Competition}}
+\begin{itemize}[leftmargin=*, nosep]
+\item Selected among 118 global entries for winning research proposal on "goal misgeneralization" in AI systems.
+\end{itemize}
 
-\textbf{Excellence Awards (8×) – MuSigma Business Solutions} \hfill \textbf{2019–2024}
+\textbf{Honorable Mention - Eliciting Latent Knowledge} \hfill \textbf{March 2022} \\
+\textit{Alignment Research Center}
+\begin{itemize}[leftmargin=*, nosep]
+\item Recognized for innovative approach to open research problem in AI safety.
+\end{itemize}
+
+\textbf{Bronze Medal - Build-on-Redis Hackathon} \hfill \textbf{February 2021} \\
+\textit{Redis Labs}
+\begin{itemize}[leftmargin=*, nosep]
+\item Developed text-to-code search tool using CodeBERT embeddings and Redis Stack for private repository indexing.
+\end{itemize}
+
+\textbf{Excellence Awards (8x)} \hfill \textbf{2019 - 2023} \\
+\textit{Musigma Business Solutions}
+\begin{itemize}[leftmargin=*, nosep]
+\item 6 SPOT (Star Performer) awards and 2 Impact Awards for technical leadership, innovation, and delivery excellence.
+\end{itemize}
 
 \section{Education}
-\textbf{Bachelor of Technology – Electronics and Communications Engineering} \hfill \textbf{2015–2019}\\
-GMR Institute of Technology, Andhra Pradesh
+\begin{itemize}[leftmargin=*, nosep]
+\item \textbf{Bachelor of Technology - Electronics and Communications Engineering}, GMR Institute of Technology, Andhra Pradesh \hfill \textbf{2015 - 2019}
+\end{itemize}
 
 \end{document}
-
