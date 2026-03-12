@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.22)  12 MAR 2026 19:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.22)  12 MAR 2026 19:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -221,7 +221,7 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count287
 \l__pdf_internal_box=\box56
 )
-No file arb_cv_v26_03_02.aux.
+(./arb_cv_v26_03_02.aux)
 \openout1 = `arb_cv_v26_03_02.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -242,6 +242,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -302,8 +303,16 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 \everyMPtoPDFconversion=\toks23
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 18.
+
+(./arb_cv_v26_03_02.out) (./arb_cv_v26_03_02.out)
 \@outlinefile=\write3
 \openout3 = `arb_cv_v26_03_02.out'.
+
+
+Overfull \hbox (0.2807pt too wide) in paragraph at lines 45--46
+[]\OT1/cmr/m/n/10.95 Ideated and ran ex-per-i-ments to per-form rig-or-ous anal
+-y-sis on self-attribution bias and prompted eval-awareness
+ []
 
 
 
@@ -317,33 +326,26 @@ al/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-Package rerunfilecheck Warning: File `arb_cv_v26_03_02.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `arb_cv_v26_03_02.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  037E9C4BFFEDB915415870249FEAA501;1113.
+Package rerunfilecheck Info: File `arb_cv_v26_03_02.out' has not changed.
+(rerunfilecheck)             Checksum: 037E9C4BFFEDB915415870249FEAA501;1113.
  ) 
 Here is how much of TeX's memory you used:
- 9336 strings out of 473190
- 144947 string characters out of 5715800
- 569521 words of memory out of 5000000
- 32517 multiletter control sequences out of 15000+600000
+ 9353 strings out of 473190
+ 145229 string characters out of 5715800
+ 568604 words of memory out of 5000000
+ 32528 multiletter control sequences out of 15000+600000
  561044 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,345b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,345b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></u
 sr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on arb_cv_v26_03_02.pdf (2 pages, 93956 bytes).
+Output written on arb_cv_v26_03_02.pdf (2 pages, 94597 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  11 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
