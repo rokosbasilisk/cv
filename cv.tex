@@ -10,10 +10,11 @@
 
 % Section formatting
 \titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{8pt}{4pt}
+\titlespacing{\section}{0pt}{14pt}{8pt}
 
 % Custom commands
 \newcommand{\itemwithdate}[2]{\item \textbf{#1} \hfill #2}
+\newcommand{\entrygap}{\vspace{8pt}}
 
 \begin{document}
 
@@ -26,7 +27,7 @@ London, UK | \href{https://github.com/arambharadwaj}{GitHub} | \href{https://www
 
 \vspace{8pt}
 \section{Professional Summary}
-AI safety researcher and engineer with 6+ years developing production AI systems and leading engineering teams. Independent researcher with preprints on activation steering, model interpretability, and LLM inference optimization. Currently researching evaluation awareness in large language models.
+AI safety researcher and engineer with 6+ years developing production AI systems and leading engineering teams. Experience spans interpretability and LLM evaluations. Currently researching evaluation awareness in large language models.
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=*, nosep]
@@ -39,12 +40,15 @@ AI safety researcher and engineer with 6+ years developing production AI systems
 \section{Experience}
 
 \textbf{AI Safety Researcher - LASR Labs @ Arcadia Impact} \hfill \textbf{Jan 2026 -- Present} \\
-\textit{London AI Safety Research (LASR) Labs}
+\textit{London AI Safety Research (LASR) Labs} \\[2pt]
+\textit{EvalAwareBench: A Benchmark for Measuring Evaluation Awareness in Frontier Language Models.} \\
+\textbf{Aryasomayajula R.~Bharadwaj}, K.~Ochwangi, X.~Li. Under review at NeurIPS 2026.
 \begin{itemize}[leftmargin=*, nosep]
-\item Co-developed EvalAwareBench, an open benchmark that measures whether frontier LLMs can distinguish evaluation from deployment contexts, designed to work with any Inspect-compatible eval. Paper under review.
-\item Uncovered previously unidentified sources of measurement bias in eval-awareness benchmarks through controlled  experiments, and developed corrections now integrated into the pipeline.
+\item Co-designed the framework for measuring whether frontier LLMs distinguish evaluation from deployment contexts; built to integrate with any Inspect-compatible eval suite.
+\item Led the generator-identity analysis: showed that the model generating a deployment transcript systematically biases evaluation-awareness scores, and explored methods to mitigate the effect.
 \end{itemize}
 
+\entrygap
 \textbf{Associate Technical Architect - Platform} \hfill \textbf{Nov 2024 -- Dec 2025} \\
 \textit{Quantiphi Analytics, Bengaluru}
 \begin{itemize}[leftmargin=*, nosep]
@@ -53,6 +57,7 @@ AI safety researcher and engineer with 6+ years developing production AI systems
 \item Revamped RAG data ingestion pipeline, improving retrieval accuracy by 20\% and reducing time to first token by 3x.
 \end{itemize}
 
+\entrygap
 \textbf{ML Engineer - Innovation \& Development Labs} \hfill \textbf{June 2019 -- Nov 2024} \\
 \textit{Musigma Business Solutions, Bengaluru}
 \begin{itemize}[leftmargin=*, nosep]
@@ -67,18 +72,18 @@ AI safety researcher and engineer with 6+ years developing production AI systems
 \textbf{AI Resident - Lossfunk AI Residency} \hfill \textbf{May 2025 -- June 2025} \\
 \textit{Lossfunk AI Residency}
 \begin{itemize}[leftmargin=*, nosep]
-\item Selected (5\% acceptance rate) for intensive AI residency program with 10 researchers.
-\item Developed \href{https://github.com/arambharadwaj/STU-PID}{PID-Steering}, a novel activation steering technique for reducing computational overhead in LLMs. Published as \href{https://arxiv.org/abs/2506.18831}{Steering Token Usage with PID Control}.
+\item Selected (5\% acceptance rate) for intensive in-person AI residency program with 10 researchers, focused on independent technical research in interpretability. Built \href{https://github.com/arambharadwaj/STU-PID}{PID-Steering}, exploring activation steering with closed-loop control.
 \end{itemize}
 
 \section{Research \& Publications}
 
-\textbf{\href{https://arxiv.org/abs/2506.18831}{Steering Token Usage with PID Control}} \hfill \textbf{June 2025} \\
-\textit{Lead Investigator}
+\textbf{EvalAwareBench: A Benchmark for Measuring Evaluation Awareness in Frontier Language Models} \hfill \textbf{Under review, NeurIPS 2026} \\
+\textit{\textbf{Aryasomayajula R.~Bharadwaj}, K.~Ochwangi, X.~Li}
 \begin{itemize}[leftmargin=*, nosep]
-\item Novel technique reducing computational overhead in LLMs through activation steering with 32\% token reduction on GSM8K.
+\item Open benchmark measuring whether frontier LLMs distinguish evaluation from deployment contexts; integrates with any Inspect-compatible eval suite.
 \end{itemize}
 
+\entrygap
 \textbf{\href{https://arxiv.org/abs/2412.04537}{Understanding Hidden Computations in Transformer Language Models}} \hfill \textbf{August 2024} \\
 \textit{Lead Investigator}
 \begin{itemize}[leftmargin=*, nosep]
@@ -93,12 +98,14 @@ AI safety researcher and engineer with 6+ years developing production AI systems
 \item Selected among 118 global entries for winning research proposal on ``goal misgeneralization'' in AI systems.
 \end{itemize}
 
+\entrygap
 \textbf{Honorable Mention - Eliciting Latent Knowledge} \hfill \textbf{March 2022} \\
 \textit{Alignment Research Center}
 \begin{itemize}[leftmargin=*, nosep]
 \item Recognized for innovative approach to open research problem in AI safety.
 \end{itemize}
 
+\entrygap
 \textbf{Bronze Medal - Build-on-Redis Hackathon} \hfill \textbf{February 2021} \\
 \textit{Redis Labs}
 \begin{itemize}[leftmargin=*, nosep]
